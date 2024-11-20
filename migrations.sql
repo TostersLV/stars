@@ -1,0 +1,23 @@
+CREATE DATABASE stars;
+
+USE stars;
+
+CREATE TABLE users (
+id INT NOT NULL AUTO_INCREMENT PRIMARY KEY, 
+username VARCHAR(50) NOT NULL UNIQUE,
+pass VARCHAR(55) NOT NULL
+);
+
+CREATE TABLE image(
+id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+image VARCHAR(1000),
+user_id INT 
+
+);
+
+INSERT INTO users
+(username, pass)
+VALUES 
+("admin", "123");
+
+SELECT * FROM users;
